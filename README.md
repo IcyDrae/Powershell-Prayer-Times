@@ -28,10 +28,3 @@ This PowerShell script retrieves daily Islamic prayer times based on your geogra
 This script uses the [Aladhan API](https://aladhan.com/prayer-times-api) to fetch prayer times based on your location.
 
 
-
-Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.
-
-DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE  
-TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
-
-0. You just DO WHAT THE FUCK YOU WANT TO.
