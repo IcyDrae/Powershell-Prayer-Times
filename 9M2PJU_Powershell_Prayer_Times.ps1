@@ -1,9 +1,12 @@
-Write-Host " ___   __  __  ____   ____       _  _   _   ____                                    _____  _                                _      ___  "
-Write-Host " / _ \ |  \/  ||___ \ |  _ \     | || | | | |  _ \  _ __   __ _  _   _   ___  _ __  |_   _|(_) _ __ ___    ___  ___  __   __/ |    / _ \ "
-Write-Host "| (_) || |\/| |  __) || |_) | _  | || | | | | |_) || '__| / _` || | | | / _ \| '__|   | |  | || '_ ` _ \  / _ \/ __| \ \ / /| |   | | | |"
-Write-Host " \__, || |  | | / __/ |  __/ | |_| || |_| | |  __/ | |   | (_| || |_| ||  __/| |      | |  | || | | | | ||  __/\__ \  \ V / | | _ | |_| |"
-Write-Host "   /_/ |_|  |_||_____||_|     \___/  \___/  |_|    |_|    \__,_| \__, | \___||_|      |_|  |_||_| |_| |_| \___||___/   \_/  |_|(_) \___/ "
-Write-Host "                                                                 |___/                                                                    "
+Write-Host " ####   ##   ##    ####   ######      ####   ##  ##  "
+Write-Host " ##  ##  ### ###   ##  ##   ##  ##      ##    ##  ##  "
+Write-Host " ##  ##  #######       ##   ##  ##      ##    ##  ##  "
+Write-Host "  #####  ## # ##      ##    ##  ##      ##    ##  ##  "
+Write-Host "     ##  ##   ##     ##     #####       ##    ##  ##  "
+Write-Host "    ##   ##   ##    ##      ##      ##  ##    ##  ##  "
+Write-Host "  ###    ##   ##   ######  ###       ####      ####   "
+Write-Host "                                                      "
+Write-Host "9M2PJU Powershell Prayer Times v1.0"
 Write-Host ""
 
 function Get-UserLocation {
@@ -24,14 +27,12 @@ function Get-PrayerTimes {
         [float]$longitude
     )
 
-
     $params = @{
         "Fajr" = 20
         "Isha" = 18
     }
 
     $apiUrl = "https://api.aladhan.com/v1/timings?latitude=$latitude&longitude=$longitude&method=17"
-
 
     $response = Invoke-RestMethod -Uri $apiUrl -Method Get
 
