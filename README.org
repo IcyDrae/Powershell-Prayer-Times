@@ -1,0 +1,37 @@
+*Powershell Prayer Times*
+
+This PowerShell script retrieves daily Islamic prayer times based on your geographical location. It uses Muslim World League as the method for calculating prayer times.
+
+It's a utility I like to use inside my Emacs.
+
+** Changes to the fork
+- Added Sunrise time
+- Added Midnight time
+- Added Qiyam time(night prayer)
+- Added location to the output, more precisely both the city and country
+
+** Features
+- Detects your latitude and longitude.
+- Retrieves prayer times using an API.
+- Displays prayer times with the location & current date.
+
+** Requirements
+- PowerShell 5.0 or higher
+- Internet access
+
+** How to Use
+1. Clone or download this repository.
+2. Open PowerShell and navigate to the script's directory.
+3. Run the script:
+
+#+begin_src powershell
+.\Powershell_Prayer_Times.ps1
+#+end_src
+
+** Output
+[[./Output Example.png]]
+
+** API Information
+This script uses the [Aladhan API](https://aladhan.com/prayer-times-api) to fetch prayer times based on your location.
+
+
