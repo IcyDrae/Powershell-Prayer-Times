@@ -29,7 +29,7 @@ It's a utility I like to use inside my Emacs.
 #+end_src
 
 ** Output
-[[./Output-Example.PNG]]
+[[./Output-example.PNG]]
 
 ** API Information
 This script uses the [Aladhan API](https://aladhan.com/prayer-times-api) to fetch prayer times based on your location.
